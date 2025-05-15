@@ -1,0 +1,55 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "Guitar Fundamentals",
+        "slug": "guitar-fundamentals",
+        "description": "Learn the basics of playing guitar with our comprehensive beginner's course.",
+        "price": 99.99,
+        "instructor": "John Doe",
+        "isFeatured": true,
+        "image": "/courses/guitar.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Piano Basics",
+        "slug": "piano-basics",
+        "description": "Start playing beautiful piano pieces with ease.",
+        "price": 89.99,
+        "instructor": "Jane Smith",
+        "isFeatured": true,
+        "image": "/courses/piano.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Drumming 101",
+        "slug": "drumming-101",
+        "description": "Master rhythm and timing with our beginner drum lessons.",
+        "price": 79.99,
+        "instructor": "Mark Johnson",
+        "isFeatured": true,
+        "image": "/courses/drums.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Violin Mastery",
+        "slug": "violin-mastery",
+        "description": "Explore advanced violin techniques from classical to modern styles.",
+        "price": 119.99,
+        "instructor": "Emily Chen",
+        "isFeatured": true,
+        "image": "/courses/violin.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Music Theory Essentials",
+        "slug": "music-theory-essentials",
+        "description": "Understand the building blocks of music with this foundational theory course.",
+        "price": 59.99,
+        "instructor": "Daniel Lee",
+        "isFeatured": true,
+        "image": "/courses/theory.jpg"
+      }
+    ]
+  }
+  
