@@ -1,4 +1,4 @@
-import ContactUs from "@/componts/ContactUs";
+
 import FeaturedCources from "@/componts/FeaturedCources";
 import Footer from "@/componts/Footer";
 import HeroSection from "@/componts/HeroSection";

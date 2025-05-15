@@ -1,9 +1,8 @@
 import Link from "next/link"
 import { Spotlight } from "./ui/Spotlight"
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button"
 import { buttonVariants } from "@/components/ui/button"
-import { CardBody, CardContainer, CardItem } from "@/componts/ui/3d-card";
+
 
 
 function HeroSection() {
@@ -49,12 +48,13 @@ function HeroSection() {
           Maruti Petroleum  <br /> Indian Oil
         </h1>
         <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-300">
-          Maruti Petroleum is a trusted name in the fuel and energy sector, committed to delivering high-quality petroleum products with efficiency and integrity. With a strong focus on customer satisfaction, safety, and sustainable practices, we serve a diverse clientele across commercial, industrial, and retail segments. Our modern infrastructure, transparent operations, and dedicated service ensure that every customer experience is reliable and seamless. At Maruti Petroleum, we are driven by a mission to fuel progress and power the future.
+          <b>Welcome to Maruti Petroleum</b> <br />
+          Maruti Petroleum is your reliable source for high-quality petrol and diesel. We are committed to delivering efficient, safe, and customer-focused service across commercial, industrial, and retail sectors. With modern infrastructure and transparent operations, we ensure a smooth and trustworthy fueling experience. At Maruti Petroleum, we fuel your journey and power your progress.
         </p>
       </div>
       <div className="relative z-10 mt-10 flex justify-center px-4">
         <Link
-          href={"/courses"}
+          href={"/#fuels"}
           className={cn(
             buttonVariants({
               variant: "default",

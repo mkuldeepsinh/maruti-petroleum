@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Mail, Phone, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Clock,Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -83,7 +83,7 @@ function Footer() {
                 <li className="flex items-start">
                   <Mail className="h-5 w-5 mr-3 mt-0.5 text-gray-400 flex-shrink-0" />
                   <a href="mailto:mkuldeepsinh9@gmail.com" className="text-gray-300 hover:text-white transition-colors">
-                    mkuldeepsinh9@gmail.com
+                    marutipetroleum@gmail.com
                   </a>
                 </li>
                 <li className="flex items-start">

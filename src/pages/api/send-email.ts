@@ -1,6 +1,6 @@
 // pages/api/send-email.ts
 import { NextApiRequest, NextApiResponse } from "next";
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
