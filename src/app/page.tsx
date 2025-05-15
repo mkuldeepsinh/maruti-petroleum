@@ -1,14 +1,29 @@
+import ContactUs from "@/componts/ContactUs";
 import FeaturedCources from "@/componts/FeaturedCources";
+import Footer from "@/componts/Footer";
 import HeroSection from "@/componts/HeroSection";
-import { main } from "framer-motion/client";
-import Image from "next/image";
+import Loacation from "@/componts/Loacation";
+import Stickyscroll from "@/componts/Stickyscroll";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02] text-white"> 
-        {/* <h1 className="text-center">kuldeep</h1> */}
+    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02] text-white">
+      <section id="home">
         <HeroSection />
+      </section>
+
+      <section id="fuels">
         <FeaturedCources />
+        <Stickyscroll />
+      </section>
+
+      <section id="location">
+        <Loacation />
+      </section>
+
+      <section id="contact">
+        <Footer />
+      </section>
     </main>
   );
 }

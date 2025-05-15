@@ -44,29 +44,30 @@ function HeroSection() {
         className="-top-40 left-0 md:-top-10 md:left-60"
         fill="white"
       />
-      <div className="relative z-10 mt-50 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
+      <div className="relative z-10 mt-45 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
         <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
-          Artificial Intelligence <br /> is the new trend.
+          Maruti Petroleum  <br /> Indian Oil
         </h1>
         <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-300">
-          Spotlight effect is a great way to draw attention to a specific part
-          of the page. Here, we are drawing the attention towards the text
-          section of the page. I don&apos;t know why but I&apos;m running out of
-          copy.
+          Maruti Petroleum is a trusted name in the fuel and energy sector, committed to delivering high-quality petroleum products with efficiency and integrity. With a strong focus on customer satisfaction, safety, and sustainable practices, we serve a diverse clientele across commercial, industrial, and retail segments. Our modern infrastructure, transparent operations, and dedicated service ensure that every customer experience is reliable and seamless. At Maruti Petroleum, we are driven by a mission to fuel progress and power the future.
         </p>
       </div>
-      <div className="relative z-10 mt-20   ">
+      <div className="relative z-10 mt-10 flex justify-center px-4">
         <Link
           href={"/courses"}
           className={cn(
-            buttonVariants({ variant: "default", size: "lg", className: "mx-auto bg-white text-black hover:bg-gray-200" }),
-            "mx-auto"
+            buttonVariants({
+              variant: "default",
+              size: "lg",
+              className:
+                "w-full max-w-xs sm:max-w-sm md:max-w-md bg-white text-black hover:bg-gray-200 text-center",
+            })
           )}
         >
-          Explore Courses
+          Explore Our Fuels
         </Link>
-
       </div>
+
 
     </div>
 
