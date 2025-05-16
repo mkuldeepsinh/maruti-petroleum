@@ -19,9 +19,6 @@ function Navbar({ className }: { className?: string }) {
                     <MenuItem setActive={setActive} active={active} item="Home">
                     </MenuItem>
                 </a>
-
-
-
                 <a
                     href="#fuels"
                     onClick={() => setActive("Fuels")}
@@ -30,17 +27,10 @@ function Navbar({ className }: { className?: string }) {
                     <MenuItem setActive={setActive} active={active} item="Fuels">
                     </MenuItem>
                 </a>
-
-
-
-
                 <a href="#location" onClick={() => setActive("Location")}>
                     <MenuItem setActive={setActive} active={active} item="Location">
                     </MenuItem>
                 </a>
-
-
-
                 <a href="#contact" onClick={() => setActive("Contact Us")}>
                     <MenuItem setActive={setActive} active={active} item="Contact Us">
                     </MenuItem>
