@@ -157,7 +157,7 @@ function FeaturedCourses() {
                 Ready to Fuel Your Journey?
               </h4>
               <p className="text-gray-600 mb-6 max-w-2xl">
-                Experience the difference with Maruti Petroleum's premium fuels, oils, and exceptional service
+                Experience the difference with Maruti Petroleum&apos;s premium fuels, oils, and exceptional service
               </p>
               <Link
                 href="/#contact"
