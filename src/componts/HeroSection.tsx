@@ -1,78 +1,79 @@
 import Link from "next/link"
-import { Spotlight } from "./ui/Spotlight"
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button"
+import { Fuel, Shield, Clock } from "lucide-react"
 
 
 
 function HeroSection() {
   return (
-    // <div
-    //     className="h-auto  md:h-screen width-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 bg-gradient-to-b from-black to-gray-900 text-white"
-    // >
+    <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-white via-blue-50 to-indigo-100 flex flex-col items-center justify-center">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]" />
+      
+      {/* Floating Elements */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+      <div className="absolute top-40 right-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+      <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+      
+      <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0 text-center">
+        {/* Logo/Brand */}
+        <div className="mb-8">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-lg mb-6">
+            <Fuel className="w-10 h-10 text-white" />
+          </div>
+        </div>
 
-    //       <Spotlight
-    //     className="-top-40 left-0 md:-top-20 md:left-60"
-    //     fill="white"
-    //   />
-    //     <div
-    //         className="p-4  relative z-10 flex flex-col items-center justify-center text-center"
-    //     >
-    //         <h1
-    //              className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400" 
-    //         >Master Of Artificial Intelligence</h1>
-    //         <p 
-    //             className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto"
-    //         >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa eum ut harum id eaque quam aspernatur voluptate ducimus tenetur voluptates repellendus, labore, deleniti tempora cumque, voluptas voluptatibus libero expedita. Nihil enim facilis dolor id. Quos hic dolor enim pariatur magni!</p>
-    //         <div className="mt-40">
-    //             <Link href={"/courses"}>
-    //                 Explore Courses
-    //             </Link>
-    //         </div>
-    //     </div>
-    // </div>
-    <div className="relative flex  flex-col h-[50rem] w-full overflow-hidden rounded-md bg-black/[0.96] antialiased md:items-center md:justify-center z-0">
-      <div
-        className={cn(
-          "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
-          "[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)]",
-        )}
-      />
-
-      <Spotlight
-        className="-top-40 left-0 md:-top-10 md:left-60"
-        fill="white"
-      />
-      <div className="relative z-10 mt-45 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
-        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
-          Maruti Petroleum  <br /> Indian Oil
+        {/* Main Heading */}
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
+          <span className="bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-900 bg-clip-text text-transparent">
+            Maruti Petroleum
+          </span>
         </h1>
-        <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-300">
-          <b>Welcome to Maruti Petroleum</b> <br />
-          Maruti Petroleum is your reliable source for high-quality petrol and diesel. We are committed to delivering efficient, safe, and customer-focused service across commercial, industrial, and retail sectors. With modern infrastructure and transparent operations, we ensure a smooth and trustworthy fueling experience. At Maruti Petroleum, we fuel your journey and power your progress.
+        
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 text-gray-700">
+          Premium <span className="text-blue-600">Indian Oil</span> Services
+        </h2>
+
+        {/* Subtitle */}
+        <p className="mx-auto mt-6 max-w-3xl text-lg md:text-xl text-gray-600 leading-relaxed">
+          Your trusted partner for high-quality petrol and diesel. We are committed to delivering 
+          <span className="font-semibold text-blue-600"> efficient, safe, and customer-focused service</span> across 
+          commercial, industrial, and retail sectors.
         </p>
-      </div>
-      <div className="relative z-10 mt-10 flex justify-center px-4">
-        <Link
-          href={"/#fuels"}
-          className={cn(
-            buttonVariants({
-              variant: "default",
-              size: "lg",
-              className:
-                "w-full max-w-xs sm:max-w-sm md:max-w-md bg-white text-black hover:bg-gray-200 text-center",
-            })
-          )}
-        >
-          Explore Our Fuels
-        </Link>
-      </div>
 
+        {/* Features */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="flex items-center justify-center space-x-3 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/20 shadow-sm">
+            <Clock className="w-6 h-6 text-blue-600" />
+            <span className="text-gray-700 font-medium">24×7 Service</span>
+          </div>
+          <div className="flex items-center justify-center space-x-3 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/20 shadow-sm">
+            <Shield className="w-6 h-6 text-green-600" />
+            <span className="text-gray-700 font-medium">Quality Assured</span>
+          </div>
+          <div className="flex items-center justify-center space-x-3 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/20 shadow-sm">
+            <Fuel className="w-6 h-6 text-orange-600" />
+            <span className="text-gray-700 font-medium">Modern Infrastructure</span>
+          </div>
+        </div>
 
+        {/* CTA Button */}
+        <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Link
+            href={"/#fuels"}
+            className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
+            Explore Our Fuels
+          </Link>
+          
+          <Link
+            href={"/#contact"}
+            className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300"
+          >
+            Contact Us
+          </Link>
+        </div>
+      </div>
     </div>
-
-
-
   )
 }
 

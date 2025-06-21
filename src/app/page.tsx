@@ -7,7 +7,7 @@ import Stickyscroll from "@/componts/Stickyscroll";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02] text-white">
+    <main className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-blue-50 antialiased">
       <section id="home">
         <HeroSection />
       </section>

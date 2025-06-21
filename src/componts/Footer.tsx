@@ -1,7 +1,7 @@
 "use client"
 import type React from "react"
 import { useState } from "react"
-import { Mail, Phone, MapPin, Clock,Send } from "lucide-react"
+import { Mail, Phone, MapPin, Clock, Send, Fuel, Shield, TrendingUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -39,134 +39,161 @@ function Footer() {
   }
 
   return (
-    <footer className="bg-black text-white py-16">
-      <div className="container mx-auto px-4 md:px-6">
+    <footer className="bg-gradient-to-br from-gray-50 to-blue-50 border-t border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Content */}
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {/* Company Info */}
-            <div className="flex flex-col items-center md:items-start text-center md:text-left">
-              <h3 className="text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-12 after:h-1 after:bg-gray-400 after:bottom-0 after:left-1/2 md:after:left-0 after:-translate-x-1/2 md:after:translate-x-0 pb-3">
-                Maruti Petroleum
-              </h3>
-              <p className="text-gray-300 mb-6 max-w-xs">
-                Providing quality petroleum products and services. Trusted by businesses and individuals across the
-                region.
-              </p>
-              {/* <div className="flex space-x-4 mt-2">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <Facebook className="h-5 w-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <Twitter className="h-5 w-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <Instagram className="h-5 w-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <Linkedin className="h-5 w-5" />
-                </a>
-              </div> */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-12">
+          {/* Company Info */}
+          <div className="lg:col-span-2">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center">
+                <Fuel className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900">Maruti Petroleum</h3>
+                <p className="text-blue-600 font-medium">Premium Indian Oil Services</p>
+              </div>
             </div>
+            <p className="text-gray-600 mb-6 max-w-md leading-relaxed">
+              Your trusted partner for high-quality petrol and diesel. We are committed to delivering 
+              efficient, safe, and customer-focused service across commercial, industrial, and retail sectors.
+            </p>
+            
+            {/* Features */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="flex items-center space-x-2">
+                <Shield className="w-4 h-4 text-green-600" />
+                <span className="text-sm text-gray-600">Quality Assured</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="w-4 h-4 text-blue-600" />
+                <span className="text-sm text-gray-600">24×7 Service</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <TrendingUp className="w-4 h-4 text-orange-600" />
+                <span className="text-sm text-gray-600">Best Prices</span>
+              </div>
+            </div>
+          </div>
 
-            {/* Contact Information */}
-            <div className="flex flex-col items-center md:items-start text-center md:text-left">
-              <h3 className="text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-12 after:h-1 after:bg-gray-400 after:bottom-0 after:left-1/2 md:after:left-0 after:-translate-x-1/2 md:after:translate-x-0 pb-3">
-                Contact Us
-              </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <Phone className="h-5 w-5 mr-3 mt-0.5 text-gray-400 flex-shrink-0" />
-                  <span className="text-gray-300">+91 73834 85353</span>
-                </li>
-                <li className="flex items-start">
-                  <Mail className="h-5 w-5 mr-3 mt-0.5 text-gray-400 flex-shrink-0" />
-                  <a href="mailto:mkuldeepsinh9@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+          {/* Contact Information */}
+          <div>
+            <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mr-3">
+                <Phone className="w-4 h-4 text-white" />
+              </div>
+              Contact Us
+            </h3>
+            <ul className="space-y-4">
+              <li className="flex items-start space-x-3">
+                <Phone className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-900 font-medium">+91 73834 85353</p>
+                  <p className="text-sm text-gray-600">24×7 Support</p>
+                </div>
+              </li>
+              <li className="flex items-start space-x-3">
+                <Mail className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <a href="mailto:marutipetroleum@gmail.com" className="text-gray-900 font-medium hover:text-blue-600 transition-colors">
                     marutipetroleum@gmail.com
                   </a>
-                </li>
-                <li className="flex items-start">
-                  <MapPin className="h-5 w-5 mr-3 mt-0.5 text-gray-400 flex-shrink-0" />
-                  <span className="text-gray-300">
-                    Maruti Petroleum, Devgana
-                    <br />
-                    Sihor, Bhavnagar, Gujarat - 364240
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <Clock className="h-5 w-5 mr-3 mt-0.5 text-gray-400 flex-shrink-0" />
-                  <span className="text-gray-300">24×7 Service</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Suggestions & Queries Form */}
-            <div className="flex flex-col items-center md:items-start text-center md:text-left">
-              <h3 className="text-2xl font-bold mb-4 relative after:content-[''] after:absolute after:w-12 after:h-1 after:bg-gray-400 after:bottom-0 after:left-1/2 md:after:left-0 after:-translate-x-1/2 md:after:translate-x-0 pb-3">
-                Suggestions & Queries
-              </h3>
-              <p className="text-gray-300 mb-4 max-w-xs">Have a question or suggestion? Let us know below.</p>
-
-              {!isSubmitted ? (
-                <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-full">
-                  <div className="relative">
-                    <Input
-                      type="text"
-                      name="name"
-                      placeholder="Your Name"
-                      required
-                      value={form.name}
-                      onChange={handleChange}
-                      className="bg-gray-900 border-gray-700 text-white pl-3 pr-3 py-2 rounded-md w-full focus:ring-1 focus:ring-gray-400 focus:border-gray-400"
-                    />
-                  </div>
-                  <div className="relative">
-                    <textarea
-                      name="message"
-                      placeholder="Your Suggestion or Query"
-                      required
-                      value={form.message}
-                      onChange={handleChange}
-                      rows={3}
-                      className="bg-gray-900 border border-gray-700 rounded-md p-3 text-white w-full focus:ring-1 focus:ring-gray-400 focus:border-gray-400 resize-none"
-                    />
-                  </div>
-                  <Button
-                    type="submit"
-                    className="w-full bg-gray-800 hover:bg-gray-700 text-white flex items-center justify-center gap-2"
-                  >
-                    <Send className="h-4 w-4" />
-                    Send Message
-                  </Button>
-                </form>
-              ) : (
-                <div className="bg-gray-900 border border-green-500 rounded-md p-4 text-center w-full">
-                  <p className="text-green-400 font-medium">✅ Message sent successfully!</p>
-                  <p className="text-gray-300 text-sm mt-1">We will get back to you soon.</p>
+                  <p className="text-sm text-gray-600">Get in touch</p>
                 </div>
-              )}
-            </div>
+              </li>
+              <li className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-900 font-medium">Maruti Petroleum, Devgana</p>
+                  <p className="text-sm text-gray-600">Sihor, Bhavnagar, Gujarat - 364240</p>
+                </div>
+              </li>
+              <li className="flex items-start space-x-3">
+                <Clock className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-900 font-medium">24×7 Service</p>
+                  <p className="text-sm text-gray-600">Always open</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Form */}
+          <div>
+            <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mr-3">
+                <Send className="w-4 h-4 text-white" />
+              </div>
+              Get In Touch
+            </h3>
+            <p className="text-gray-600 mb-4 text-sm">Have a question or suggestion? Let us know below.</p>
+
+            {!isSubmitted ? (
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <Input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    value={form.name}
+                    onChange={handleChange}
+                    className="bg-white border-gray-200 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 rounded-xl"
+                  />
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                    value={form.message}
+                    onChange={handleChange}
+                    rows={3}
+                    className="bg-white border border-gray-200 rounded-xl p-3 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none w-full"
+                  />
+                </div>
+                <Button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <Send className="h-4 w-4 mr-2" />
+                  Send Message
+                </Button>
+              </form>
+            ) : (
+              <div className="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
+                <p className="text-green-700 font-medium">✅ Message sent successfully!</p>
+                <p className="text-green-600 text-sm mt-1">We will get back to you soon.</p>
+              </div>
+            )}
           </div>
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-800 mt-16 pt-8 max-w-5xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">&copy; {currentYear} Maruti Petroleum. All rights reserved.</p>
-            <div className="mt-4 md:mt-0">
+        <div className="border-t border-gray-200 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex items-center space-x-2">
+              <div className="w-6 h-6 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                <Fuel className="w-3 h-3 text-white" />
+              </div>
+              <p className="text-gray-600 text-sm">
+                &copy; {currentYear} Maruti Petroleum. All rights reserved.
+              </p>
+            </div>
+            <div>
               <ul className="flex space-x-6">
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+                  <a href="#" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+                  <a href="#" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
                     Terms of Service
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+                  <a href="#" className="text-gray-600 hover:text-blue-600 text-sm transition-colors">
                     Sitemap
                   </a>
                 </li>
