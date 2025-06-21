@@ -10,13 +10,18 @@ function Navbar() {
     const [isNavbarVisible, setIsNavbarVisible] = useState(false);
 
     useEffect(() => {
-        // Show navbar after a delay to avoid overlapping with hero section
+        // Show navbar after a longer delay to avoid overlapping with hero section
         const timer = setTimeout(() => {
             setIsNavbarVisible(true);
-        }, 1000); // 1 second delay
+        }, 2000); // 2 seconds delay
 
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
+            
+            // Show navbar immediately when user starts scrolling
+            if (window.scrollY > 10) {
+                setIsNavbarVisible(true);
+            }
             
             // Update active section based on scroll position
             const sections = ["home", "fuels", "location", "contact"];
