@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
-import { Fuel, Zap, Shield, Clock, TrendingUp } from "lucide-react";
+import { Fuel, Zap, Shield } from "lucide-react";
 
 const content = [
   {

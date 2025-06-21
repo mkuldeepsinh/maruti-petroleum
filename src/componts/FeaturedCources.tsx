@@ -43,7 +43,7 @@ const features = [
   {
     icon: Shield,
     title: "Quality Assured",
-    description: "All fuels meet Indian Oil's stringent quality standards"
+    description: "All fuels meet Indian Oil&apos;s stringent quality standards"
   },
   {
     icon: Clock,

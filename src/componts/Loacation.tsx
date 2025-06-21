@@ -179,7 +179,7 @@ function Location() {
                 Ready to Visit Us?
               </h4>
               <p className="text-gray-600 mb-6 max-w-2xl">
-                Experience our premium fuels and exceptional service. We're here to fuel your journey 24×7.
+                Experience our premium fuels and exceptional service. We&apos;re here to fuel your journey 24×7.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Fuel, Phone, MapPin, Mail } from "lucide-react";
+import { Fuel, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Navbar() {
@@ -240,4 +240,4 @@ function Navbar() {
     );
 }
 
-export default Navbar; 
+export default Navbar;
